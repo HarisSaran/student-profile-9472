@@ -1,8 +1,10 @@
+import Detail from "./Detail";
+
 const StudentDetail = ({ details }) => {
   return (
     <>
-      {details.map((details) => (
-        <h3 key={details.id}>{details.city}</h3>
+      {details.map((detail) => (
+        <Detail key={detail.id} detail={detail} />
       ))}
     </>
   );
