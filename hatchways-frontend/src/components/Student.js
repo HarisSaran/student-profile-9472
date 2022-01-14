@@ -1,10 +1,15 @@
-// import React from 'react'
 import PropTypes from "prop-types";
+import Button from "./Button";
 
 const Student = ({ title }) => {
+  const onClick = () => {
+    console.log("you Clicked");
+  };
+
   return (
-    <header>
+    <header className="header">
       <h1>{title}</h1>
+      <Button color="blue" text="HI hi Hi" onClick={onClick} />
     </header>
   );
 };
