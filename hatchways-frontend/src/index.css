@@ -1,5 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .container {
@@ -70,12 +70,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 125px;
+  /* font-weight: 900; */
 }
 
 .initial p {
   /* text-align: center; */
-  padding-left: 25px;
-  color: lightslategray;
+  padding-left: 150px;
+  color: rgb(181, 182, 182);
+  font-weight: 100;
 }
 
 .add-form {
@@ -118,6 +121,13 @@ footer {
   text-align: center;
 }
 
-/* .detail img {
+.detail img {
   float: left;
-} */
+  width: 80px;
+  height: 80px;
+  border-radius: 80%;
+  border: 1px solid rgb(216, 214, 214);
+  position: relative;
+  left: 10px;
+  top: -20px;
+}
