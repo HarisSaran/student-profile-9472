@@ -1,15 +1,19 @@
 import Detail from "./Detail";
 // import Button from "./Button";
 
-const StudentDetail = ({ details, onViewGrades }) => {
+const StudentDetail = ({ students, onViewGrades }) => {
   // const onClick = () => {
   //   console.log("you Clicked");
   // };
 
   return (
     <>
-      {details.map((detail) => (
-        <Detail key={detail.id} detail={detail} onViewGrades={onViewGrades} />
+      {students.map((student) => (
+        <Detail
+          key={student.id}
+          student={student}
+          onViewGrades={onViewGrades}
+        />
       ))}
     </>
   );

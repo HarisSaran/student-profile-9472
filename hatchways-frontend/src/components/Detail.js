@@ -1,23 +1,23 @@
 import { BiPlusMedical } from "react-icons/bi";
 // import { BiMinus } from "react-icons/bi";
 
-const Detail = ({ detail, onViewGrades }) => {
+const Detail = ({ student, onViewGrades }) => {
   return (
     <div className="detail">
       <h1>
-        {detail.firstName.toUpperCase() + " " + detail.lastName.toUpperCase()}{" "}
+        {student.firstName.toUpperCase() + " " + student.lastName.toUpperCase()}{" "}
         <BiPlusMedical
           style={{ color: "grey" }}
           // onClick={() => onViewGrades(detail.grades)}
-          onClick={() => onViewGrades(detail.id)}
+          onClick={() => onViewGrades(student.id)}
         />
       </h1>
       <div className="initial">
-        <img src={detail.pic} alt="oops, nothing found!" />
-        <p>Email: {detail.email} </p>
-        <p>Company: {detail.company}</p>
-        <p>Skill: {detail.skill}</p>
-        <p>Average: {detail.skill}</p>
+        <img src={student.pic} alt="oops, nothing found!" />
+        <p>Email: {student.email} </p>
+        <p>Company: {student.company}</p>
+        <p>Skill: {student.skill}</p>
+        <p>Average: {student.skill}</p>
       </div>
     </div>
   );

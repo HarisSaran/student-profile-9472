@@ -4,7 +4,7 @@ import StudentDetail from "./components/StudentDetails";
 import { useState } from "react";
 
 function App() {
-  const [details, setDetails] = useState([
+  const [students, setDetails] = useState([
     {
       city: "Fush\u00eb-Muhurr",
       company: "Yadel",
@@ -137,7 +137,7 @@ function App() {
   return (
     <div className="container">
       <Student />
-      <StudentDetail details={details} onViewGrades={viewGrades} />
+      <StudentDetail students={students} onViewGrades={viewGrades} />
     </div>
   );
 }
