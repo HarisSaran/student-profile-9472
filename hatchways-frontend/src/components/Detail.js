@@ -1,4 +1,5 @@
 import { BiPlusMedical } from "react-icons/bi";
+// import { BiMinus } from "react-icons/bi";
 
 const Detail = ({ detail, onViewGrades }) => {
   return (
