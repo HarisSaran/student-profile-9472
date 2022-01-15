@@ -11,13 +11,13 @@ body {
 }
 
 .container {
-  max-width: 500px;
-  margin: 30px auto;
+  max-width: 700px;
+  margin: 50px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
-  padding: 30px;
-  border-radius: 5px;
+  border: 3px solid rgb(216, 214, 214);
+  padding: 0px;
+  border-radius: 10px;
 }
 
 .header {
@@ -55,20 +55,27 @@ body {
 }
 
 .detail {
-  background: #f4f4f4;
-  margin: 5px;
-  padding: 10px 20px;
+  background: #ffffff;
+  margin: 0px;
+  padding: 10px 0px;
   cursor: pointer;
+  border-top: 1px solid rgb(224, 222, 222);
 }
 
 .detail.reminder {
   border-left: 5px solid green;
 }
 
-.detail h3 {
+.detail h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.initial p {
+  /* text-align: center; */
+  padding-left: 25px;
+  color: lightslategray;
 }
 
 .add-form {
@@ -110,3 +117,7 @@ footer {
   margin-top: 30px;
   text-align: center;
 }
+
+/* .detail img {
+  float: left;
+} */
