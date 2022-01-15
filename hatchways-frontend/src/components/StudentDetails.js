@@ -1,7 +1,7 @@
 import Detail from "./Detail";
 // import Button from "./Button";
 
-const StudentDetail = ({ details }) => {
+const StudentDetail = ({ details, onViewGrades }) => {
   // const onClick = () => {
   //   console.log("you Clicked");
   // };
@@ -9,7 +9,7 @@ const StudentDetail = ({ details }) => {
   return (
     <>
       {details.map((detail) => (
-        <Detail key={detail.id} detail={detail} />
+        <Detail key={detail.id} detail={detail} onViewGrades={onViewGrades} />
       ))}
     </>
   );

@@ -1,11 +1,15 @@
 import { BiPlusMedical } from "react-icons/bi";
 
-const Detail = ({ detail }) => {
+const Detail = ({ detail, onViewGrades }) => {
   return (
     <div className="detail">
       <h1>
         {detail.firstName.toUpperCase() + " " + detail.lastName.toUpperCase()}{" "}
-        <BiPlusMedical style={{ color: "grey" }} />
+        <BiPlusMedical
+          style={{ color: "grey" }}
+          // onClick={() => onViewGrades(detail.grades)}
+          onClick={() => onViewGrades(detail.id)}
+        />
       </h1>
       <div className="initial">
         <img src={detail.pic} alt="oops, nothing found!" />

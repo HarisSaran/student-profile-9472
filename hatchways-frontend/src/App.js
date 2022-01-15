@@ -128,10 +128,16 @@ function App() {
     },
   ]);
 
+  // View Grades
+  const viewGrades = (id) => {
+    // console.log("view Grades!!!", id);
+    setDetails(details.filter((detail) => detail.id !== id));
+  };
+
   return (
     <div className="container">
       <Student />
-      <StudentDetail details={details} />
+      <StudentDetail details={details} onViewGrades={viewGrades} />
     </div>
   );
 }
