@@ -8,12 +8,8 @@ const StudentDetail = ({ students, onViewGrades }) => {
 
   return (
     <>
-      {students.map((student) => (
-        <Detail
-          key={student.id}
-          student={student}
-          onViewGrades={onViewGrades}
-        />
+      {students.map((student, index) => (
+        <Detail key={index} student={student} onViewGrades={onViewGrades} />
       ))}
     </>
   );
